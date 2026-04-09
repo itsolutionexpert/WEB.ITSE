@@ -1,0 +1,1342 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile | IT Solution Expert</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --secondary-blue: #003366;
+            --accent-teal: #00a8a8;
+            --light-bg: #f4f7f9;
+            --white: #ffffff;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, var(--secondary-blue), var(--primary-blue));
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 20px 30px;
+            background: #eef2f5;
+            border-bottom: 3px solid var(--accent-teal);
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .service-category {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+            .category-header i {
+                margin-right: 10px;
+                color: var(--accent-teal);
+            }
+
+        .sub-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .card {
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.85em;
+        }
+
+            .card h4 {
+                margin: 0 0 10px 0;
+                text-transform: uppercase;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                padding-bottom: 5px;
+            }
+
+            .card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .card ul li::before {
+                    content: "› ";
+                    font-weight: bold;
+                }
+
+        /* Colors based on original image */
+        .bg-blue {
+            background-color: #2c5da0;
+        }
+
+        .bg-navy {
+            background-color: #1a3a5f;
+        }
+
+        .bg-teal {
+            background-color: #1b9b8e;
+        }
+
+        .bg-dark-teal {
+            background-color: #145a5a;
+        }
+
+        .bg-green {
+            background-color: #2e7d32;
+        }
+
+        .bg-purple {
+            background-color: #512da8;
+        }
+
+        .bg-orange {
+            background-color: #bf6b1a;
+        }
+
+        .bg-red {
+            background-color: #b71c1c;
+        }
+
+        /* Full Width Section */
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .triple-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-blue);
+            color: white;
+            padding: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            text-align: center;
+        }
+
+        .contact-item h5 {
+            margin: 0;
+            color: #aaa;
+            font-size: 0.75em;
+            text-transform: uppercase;
+        }
+
+        .contact-item p {
+            margin: 5px 0;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid, .sub-cards, .triple-cards, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <h1>IT Solution Expert (ITSE)</h1>
+                <div class="tagline">Industry Expert in Manage and Protecting IT</div>
+            </div>
+            <div style="text-align: right;">
+                <div style="border: 1px solid white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em;">
+                    COMPLETE IT SERVICES PORTFOLIO
+                </div>
+            </div>
+        </header>
+
+        <section class="intro">
+            IT Solution Expert delivers end-to-end IT solutions — from infrastructure assessments & managed services to cybersecurity, FMS outsourcing, rentals, and professional services — all under one trusted roof.
+        </section>
+
+        <div class="services-grid">
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-search"></i> ASSESSMENT SERVICES</div>
+                <div class="sub-cards">
+                    <div class="card bg-blue">
+                        <h4>IT INFRASTRUCTURE</h4>
+                        <ul>
+                            <li>IT Infra Assessment</li>
+                            <li>Wi-Fi Assessment</li>
+                            <li>Firewall Assessment</li>
+                            <li>Security Posture Assessment</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>WHY ASSESS?</h4>
+                        <ul>
+                            <li>Identify security gaps early</li>
+                            <li>Optimise network performance</li>
+                            <li>Firewall best practices</li>
+                            <li>Baseline security posture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-tasks"></i> MANAGED IT SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-teal">
+                        <h4>DATACENTER</h4>
+                        <ul>
+                            <li>Datacenter Management</li>
+                            <li>Server, Storage & Network</li>
+                            <li>Firewall Support</li>
+                            <li>Backup & Virtualization</li>
+                            <li>CI / HCI / dHCI Support</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>CLOUD & CONTINUITY</h4>
+                        <ul>
+                            <li>Cloud Support</li>
+                            <li>DC-DR Support</li>
+                            <li>Backup & Virtualization</li>
+                            <li>Proactive 24x7 Monitoring</li>
+                            <li>SLA-Driven Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-users"></i> IT OUTSOURCING / FMS SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-green">
+                        <h4>SUPPORT ENGINEERS</h4>
+                        <ul>
+                            <li>L3 / L2 / L1 Support</li>
+                            <li>Cloud Expert</li>
+                            <li>vCISO / vCTO</li>
+                            <li>IT Security Specialities</li>
+                            <li>VDI Engineer</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-purple">
+                        <h4>SPECIALIST ROLES</h4>
+                        <ul>
+                            <li>Backup / Virtualization Expert</li>
+                            <li>Cyber Security Expert</li>
+                            <li>Backup Administrator</li>
+                            <li>HPC Engineers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-shield-alt"></i> CYBERSECURITY SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-orange">
+                        <h4>CORE SECURITY</h4>
+                        <ul>
+                            <li>Cybersecurity Insurance</li>
+                            <li>SOC Monitoring / Setup</li>
+                            <li>VAPT & Attack Surface</li>
+                            <li>Firewall Auditing</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-red">
+                        <h4>RISK & COMPLIANCE</h4>
+                        <ul>
+                            <li>ISO 27001, SOC2, GDPR, HIPAA</li>
+                            <li>Workforce & 3rd-party Risk</li>
+                            <li>Dark Web & Brand Monitoring</li>
+                            <li>Phishing Simulation</li>
+                            <li>Security Awareness Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category full-width">
+                <div class="category-header"><i class="fas fa-truck-loading"></i>MULTI-CLOUD MANAGEMENT & SOLUTION DESIGN, LICENSE MANAGEMENT & IT COST OPTIMIZATION, PROFESSIONAL SERVICES</div>
+                <div class="triple-cards">
+                    <div class="card bg-blue">
+                        <h4>MULTI-CLOUD MANAGEMENT & SOLUTION DESIGN</h4>
+                        <ul>
+                            <li>Multi-Cloud Management</li>
+                            <li>IT Solution Design</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>LICENSE MANAGEMENT & IT COST OPTIMIZATION</h4>
+                        <ul>
+                            <li>Exters in License Management</li>
+                            <li>IT Cost Optimization</li>
+                            <li>Cloud Cost Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>PROFESSIONAL SERVICES</h4>
+                        <ul>
+                            <li>IT Security at Key</li>
+                            <li>Extpert in Role Based Access management to Protect IT</li>
+                            <li>Break-fix Support</li>
+                            <li>Migration - P2P, V2V, etc.</li>
+                            <li>Cloud to Cloud Migration</li>
+                            <li>Buy Back - Server & Storage</li>
+                            <li>IT Asset Disposition</li>
+                            <li>Expert in IT Network Security Design &Aacute; Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h5>Contact</h5>
+                    <p>Sales & Marketing</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Phone</h5>
+                    <p>+91 63664 47771</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Email</h5>
+                    <p>contact@itsolutionexpert.co.in</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Website</h5>
+                    <p>https://www.itsolutionexpert.co.in</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px; font-size: 0.7em; opacity: 0.6; border-top: 1px solid #333; padding-top: 10px;">
+                Industry Expert in Manage and Protecting IT | YOUR SINGLE PARTNER FOR END-TO-END IT EXCELLENCE
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile | IT Solution Expert</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --secondary-blue: #003366;
+            --accent-teal: #00a8a8;
+            --gold: #d4af37;
+            --light-bg: #f4f7f9;
+            --white: #ffffff;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background: var(--white);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, var(--secondary-blue), var(--primary-blue));
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 {
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 20px 30px;
+            background: #eef2f5;
+            border-bottom: 3px solid var(--accent-teal);
+            font-weight: 500;
+            text-align: center;
+        }
+
+        /* Why Choose Us Section */
+        .benefits-section {
+            padding: 30px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .benefit-box {
+            background: #fdfdfd;
+            border-left: 4px solid var(--primary-blue);
+            padding: 15px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+        }
+
+            .benefit-box h3 {
+                margin-top: 0;
+                color: var(--primary-blue);
+                font-size: 1.1em;
+                display: flex;
+                align-items: center;
+            }
+
+                .benefit-box h3 i {
+                    margin-right: 10px;
+                    color: var(--accent-teal);
+                }
+
+        .cert-badge {
+            background: var(--secondary-blue);
+            color: var(--gold);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            border: 1px solid var(--gold);
+        }
+
+        /* Grid Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .service-category {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .category-header {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+        }
+
+            .category-header i {
+                margin-right: 10px;
+                color: var(--accent-teal);
+            }
+
+        .sub-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .card {
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.85em;
+        }
+
+            .card h4 {
+                margin: 0 0 10px 0;
+                text-transform: uppercase;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                padding-bottom: 5px;
+            }
+
+            .card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .card ul li::before {
+                    content: "› ";
+                    font-weight: bold;
+                }
+
+        /* Colors */
+        .bg-blue {
+            background-color: #2c5da0;
+        }
+
+        .bg-navy {
+            background-color: #1a3a5f;
+        }
+
+        .bg-teal {
+            background-color: #1b9b8e;
+        }
+
+        .bg-green {
+            background-color: #2e7d32;
+        }
+
+        .bg-purple {
+            background-color: #512da8;
+        }
+
+        .bg-orange {
+            background-color: #bf6b1a;
+        }
+
+        .bg-red {
+            background-color: #b71c1c;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .triple-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-blue);
+            color: white;
+            padding: 30px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            text-align: center;
+        }
+
+        .contact-item h5 {
+            margin: 0;
+            color: #aaa;
+            font-size: 0.75em;
+            text-transform: uppercase;
+        }
+
+        .contact-item p {
+            margin: 5px 0;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid, .sub-cards, .triple-cards, .contact-grid, .benefits-section {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo-area">
+                <h1>IT Solution Expert (ITSE)</h1>
+                <div class="tagline">Industry Expert in Managing and Protecting IT</div>
+            </div>
+            <div style="text-align: right;">
+                <div class="cert-badge">
+                    <i class="fas fa-certificate"></i> ISO 27001 CERTIFIED
+                </div>
+            </div>
+        </header>
+
+        <section class="intro">
+            IT Solution Expert delivers end-to-end IT solutions — from infrastructure assessments & managed services to cybersecurity, FMS outsourcing, rentals, and professional services — all under one trusted roof.
+        </section>
+
+        <section class="benefits-section">
+            <div class="benefit-box">
+                <h3><i class="fas fa-award"></i> Why Choose Us?</h3>
+                <ul style="font-size: 0.9em; padding-left: 20px;">
+                    <li><strong>Certified Excellence:</strong> ISO 27001 Certified company ensuring global security standards.</li>
+                    <li><strong>Expert Talent:</strong> Access to L1/L2/L3 support and specialized vCISO expertise.</li>
+                    <li><strong>Single Window:</strong> One-stop-shop for hardware, software, and managed services.</li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3><i class="fas fa-chart-line"></i> Business Benefits</h3>
+                <ul style="font-size: 0.9em; padding-left: 20px;">
+                    <li><strong>Cost Savings:</strong> Up to 30% optimization in IT and Cloud licensing costs.</li>
+                    <li><strong>Risk Mitigation:</strong> Proactive 24/7 monitoring and security gap identification.</li>
+                    <li><strong>Agility:</strong> Faster migrations (Cloud/DC) with zero business disruption.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="services-grid">
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-search"></i> ASSESSMENT SERVICES</div>
+                <div class="sub-cards">
+                    <div class="card bg-blue">
+                        <h4>IT INFRASTRUCTURE</h4>
+                        <ul>
+                            <li>IT Infra Assessment</li>
+                            <li>Wi-Fi Assessment</li>
+                            <li>Firewall Assessment</li>
+                            <li>Security Posture Assessment</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>WHY ASSESS?</h4>
+                        <ul>
+                            <li>Identify security gaps early</li>
+                            <li>Optimise network performance</li>
+                            <li>Firewall best practices</li>
+                            <li>Baseline security posture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-tasks"></i> MANAGED IT SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-teal">
+                        <h4>DATACENTER</h4>
+                        <ul>
+                            <li>Datacenter Management</li>
+                            <li>Server, Storage & Network</li>
+                            <li>Firewall Support</li>
+                            <li>Backup & Virtualization</li>
+                            <li>CI / HCI / dHCI Support</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>CLOUD & CONTINUITY</h4>
+                        <ul>
+                            <li>Cloud Support</li>
+                            <li>DC-DR Support</li>
+                            <li>Backup & Virtualization</li>
+                            <li>Proactive 24x7 Monitoring</li>
+                            <li>SLA-Driven Delivery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-users"></i> IT OUTSOURCING / FMS SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-green">
+                        <h4>SUPPORT ENGINEERS</h4>
+                        <ul>
+                            <li>L3 / L2 / L1 Support</li>
+                            <li>Cloud Expert</li>
+                            <li>vCISO / vCTO</li>
+                            <li>IT Security Specialties</li>
+                            <li>VDI Engineer</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-purple">
+                        <h4>SPECIALIST ROLES</h4>
+                        <ul>
+                            <li>Backup / Virtualization Expert</li>
+                            <li>Cyber Security Expert</li>
+                            <li>Backup Administrator</li>
+                            <li>HPC Engineers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-shield-alt"></i> CYBERSECURITY SERVICE</div>
+                <div class="sub-cards">
+                    <div class="card bg-orange">
+                        <h4>CORE SECURITY</h4>
+                        <ul>
+                            <li>Cybersecurity Insurance</li>
+                            <li>SOC Monitoring / Setup</li>
+                            <li>VAPT & Attack Surface</li>
+                            <li>Firewall Auditing</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-red">
+                        <h4>RISK & COMPLIANCE</h4>
+                        <ul>
+                            <li>ISO 27001, SOC2, GDPR, HIPAA</li>
+                            <li>Workforce & 3rd-party Risk</li>
+                            <li>Dark Web & Brand Monitoring</li>
+                            <li>Phishing Simulation</li>
+                            <li>Security Awareness Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category full-width">
+                <div class="category-header"><i class="fas fa-cloud"></i> CLOUD & PROFESSIONAL SERVICES</div>
+                <div class="triple-cards">
+                    <div class="card bg-blue">
+                        <h4>MULTI-CLOUD DESIGN</h4>
+                        <ul>
+                            <li>Multi-Cloud Management</li>
+                            <li>IT Solution Design</li>
+                            <li>Scalable Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>COST OPTIMIZATION</h4>
+                        <ul>
+                            <li>License Management Experts</li>
+                            <li>IT Cost Optimization</li>
+                            <li>Cloud Cost Reduction</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-navy">
+                        <h4>PROFESSIONAL SVCS</h4>
+                        <ul>
+                            <li>Role Based Access Management</li>
+                            <li>Cloud to Cloud Migration</li>
+                            <li>Network Security Design</li>
+                            <li>Buy Back & Asset Disposition</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h5>Contact</h5>
+                    <p>Sales & Marketing</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Phone</h5>
+                    <p>+91 63664 47771</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Email</h5>
+                    <p>contact@itsolutionexpert.co.in</p>
+                </div>
+                <div class="contact-item">
+                    <h5>Website</h5>
+                    <p>www.itsolutionexpert.co.in</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px; font-size: 0.7em; opacity: 0.6; border-top: 1px solid #333; padding-top: 10px;">
+                Industry Expert in Managing and Protecting IT | YOUR SINGLE PARTNER FOR END-TO-END IT EXCELLENCE
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile | IT Solution Expert</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --secondary-blue: #003366;
+            --accent-teal: #00a8a8;
+            --gold: #d4af37;
+            --light-bg: #f4f7f9;
+            --white: #ffffff;
+            --text-dark: #333;
+            --btn-hover: #0056b3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            background: var(--white);
+            box-shadow: 0 0 30px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header & Branding */
+        header {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue) 100%);
+            color: white;
+            padding: 40px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: #002244;
+            color: #fff;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .trust-item i {
+            color: var(--accent-teal);
+            margin-right: 8px;
+        }
+
+        /* Intro Section */
+        .intro {
+            padding: 40px;
+            background: #ffffff;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+            .intro h2 {
+                color: var(--primary-blue);
+                margin-bottom: 15px;
+            }
+
+        .cta-main {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: var(--accent-teal);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+            .cta-main:hover {
+                background: var(--secondary-blue);
+                transform: translateY(-2px);
+            }
+
+        /* Benefits Grid */
+        .benefits-section {
+            padding: 30px;
+            background-color: #f9fbfc;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--accent-teal);
+        }
+
+            .benefit-card i {
+                font-size: 2.5em;
+                color: var(--primary-blue);
+                margin-bottom: 15px;
+            }
+
+        /* Services Layout */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .service-category {
+            border: 1px solid #e1e8ed;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+            .service-category:hover {
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+
+        .category-header {
+            background-color: #f1f4f8;
+            padding: 15px 20px;
+            font-weight: bold;
+            color: var(--secondary-blue);
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--accent-teal);
+        }
+
+        .sub-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            padding: 20px;
+        }
+
+        .card {
+            color: white;
+            padding: 18px;
+            border-radius: 8px;
+            font-size: 0.85em;
+        }
+
+            .card h4 {
+                margin: 0 0 12px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+                padding-bottom: 5px;
+            }
+
+            .card ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+                .card ul li {
+                    margin-bottom: 5px;
+                }
+
+                    .card ul li::before {
+                        content: "✔ ";
+                        font-weight: bold;
+                        color: rgba(255,255,255,0.7);
+                    }
+
+        /* Specific Colors */
+        .bg-gradient-blue {
+            background: linear-gradient(to bottom right, #2c5da0, #1a3a5f);
+        }
+
+        .bg-gradient-teal {
+            background: linear-gradient(to bottom right, #1b9b8e, #145a5a);
+        }
+
+        .bg-gradient-dark {
+            background: #1a1a1a;
+        }
+
+        /* Full Width */
+        .full-width {
+            grid-column: span 2;
+        }
+
+        .triple-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            padding: 20px;
+        }
+
+        /* Interactive Footer */
+        footer {
+            background: #001a33;
+            color: white;
+            padding: 50px 30px 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+
+            .contact-item a:hover {
+                color: var(--accent-teal);
+            }
+
+        .contact-item i {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: var(--accent-teal);
+        }
+
+        @media (max-width: 900px) {
+            .services-grid, .sub-cards, .triple-cards, .contact-grid, .benefits-section {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width {
+                grid-column: span 1;
+            }
+
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .trust-bar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="logo" target="_blank">
+                <img src="https://www.itsolutionexpert.co.in/images/ITSE_TrnsW_Logo.png"
+                     alt="logo"
+                     style="height: 120px; width: 280px;" />
+            </div>
+            <div class="logo-area">
+                <h1>IT Solution Expert (ITSE)</span></h1>
+                <div class="tagline">Global Industry Experts in Managing & Protecting IT</div>
+            </div>
+            <div style="text-align: right;">
+                <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border: 1px solid var(--gold);">
+                    <span style="color: var(--gold); font-weight: bold; display: block; font-size: 1.2em;">ISO 27001</span>
+                    <span style="font-size: 0.8em; text-transform: uppercase;">Certified Security Standards</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="trust-bar">
+            <div class="trust-item"><i class="fas fa-check-circle"></i> 24/7 Proactive Monitoring</div>
+            <div class="trust-item"><i class="fas fa-check-circle"></i> 99.9% Uptime Commitment</div>
+            <div class="trust-item"><i class="fas fa-check-circle"></i> SLA-Driven Delivery</div>
+        </div>
+
+        <section class="intro">
+            <h2>Your Single Partner for End-to-End IT Excellence</h2>
+            <p style="max-width: 800px; margin: 0 auto; color: #666;">
+                We empower businesses with cutting-edge infrastructure, military-grade cybersecurity, and seamless cloud management. From startups to enterprises, we manage the complexity so you can focus on growth.
+            </p>
+            <a href="mailto:contact@itsolutionexpert.co.in" class="cta-main">Schedule a Free Discussion to Understand</a>
+        </section>
+
+        <section class="benefits-section">
+            <div class="benefit-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security First</h3>
+                <p style="font-size: 0.85em; color: #555;">ISO 27001 certified processes to ensure your data is always protected and compliant.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-coins"></i>
+                <h3>Cost Optimization</h3>
+                <p style="font-size: 0.85em; color: #555;">Reduce IT overhead by up to 30% through expert license and resource management.</p>
+            </div>
+            <div class="benefit-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Expert Access</h3>
+                <p style="font-size: 0.85em; color: #555;">On-demand access to vCISO, Cloud Architects, and L3 Support Engineers.</p>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="benefit-box">
+                <h3><i class="fas fa-award"></i> Why Choose Us?</h3>
+                <ul style="font-size: 0.9em; padding-left: 20px;">
+                    <li><strong>Certified Excellence:</strong> ISO 27001 Certified company ensuring global security standards.</li>
+                    <li><strong>Expert Talent:</strong> Access to L1/L2/L3 support and specialized vCISO expertise.</li>
+                    <li><strong>Single Window:</strong> One-stop-shop for hardware, software, and managed services.</li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3><i class="fas fa-chart-line"></i> Business Benefits</h3>
+                <ul style="font-size: 0.9em; padding-left: 20px;">
+                    <li><strong>Cost Savings:</strong> Up to 30% optimization in IT and Cloud licensing costs.</li>
+                    <li><strong>Risk Mitigation:</strong> Proactive 24/7 monitoring and security gap identification.</li>
+                    <li><strong>Agility:</strong> Faster migrations (Cloud/DC) with zero business disruption.</li>
+                </ul>
+            </div>
+            <div class="benefit-box">
+                <h3><i class="fas fa-award"></i> Expert at your Service</h3>
+                <ul style="font-size: 0.9em; padding-left: 20px;">
+                    <li><strong>Certified Excellence:</strong> 20+ years of Experience Technicians with Multiple Industry Certifications.</li>
+                    <li><strong>Expert Talent:</strong> Expert in managing all types of IT Exnvironments by Indusry Experience.</li>
+                    <li><strong>Single Window:</strong> One-stop-shop to Manage Cloud, On-Prem, In-House IT services.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="services-grid">
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-microscope" style="margin-right:10px"></i> STRATEGIC ASSESSMENT</div>
+                <div class="sub-cards">
+                    <div class="card bg-gradient-blue">
+                        <h4>INFRASTRUCTURE</h4>
+                        <ul>
+                            <li>Full IT Infra Audit</li>
+                            <li>Wi-Fi & Network Mesh</li>
+                            <li>Security Posture</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-teal">
+                        <h4>THE ADVANTAGE</h4>
+                        <ul>
+                            <li>Identify Gaps Early</li>
+                            <li>Optimize Performance</li>
+                            <li>Risk Benchmarking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-server" style="margin-right:10px"></i> MANAGED IT SERVICES</div>
+                <div class="sub-cards">
+                    <div class="card bg-gradient-blue">
+                        <h4>DATACENTER</h4>
+                        <ul>
+                            <li>Server & Storage</li>
+                            <li>HCI / dHCI Support</li>
+                            <li>Backup & DR</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-teal">
+                        <h4>CLOUD OPS</h4>
+                        <ul>
+                            <li>24x7 Monitoring</li>
+                            <li>Multi-Cloud Design</li>
+                            <li>Scalable Provisioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-user-shield" style="margin-right:10px"></i> CYBERSECURITY & COMPLIANCE</div>
+                <div class="sub-cards">
+                    <div class="card bg-gradient-blue" style="background:#bf6b1a">
+                        <h4>CORE DEFENSE</h4>
+                        <ul>
+                            <li>SOC Setup & Monitor</li>
+                            <li>VAPT & Hardening</li>
+                            <li>Firewall Auditing</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-teal" style="background:#b71c1c">
+                        <h4>COMPLIANCE</h4>
+                        <ul>
+                            <li>ISO, GDPR, HIPAA</li>
+                            <li>Dark Web Monitoring</li>
+                            <li>Phishing Simulations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <div class="category-header"><i class="fas fa-handshake" style="margin-right:10px"></i> IT OUTSOURCING</div>
+                <div class="sub-cards">
+                    <div class="card bg-gradient-blue" style="background:#2e7d32">
+                        <h4>ON-SITE TALENT</h4>
+                        <ul>
+                            <li>L1/L2/L3 Support</li>
+                            <li>VDI Specialists</li>
+                            <li>System Administrators</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-teal" style="background:#512da8">
+                        <h4>EXPERT ROLES</h4>
+                        <ul>
+                            <li>vCISO & vCTO</li>
+                            <li>Cloud Architects</li>
+                            <li>Security Experts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category full-width">
+                <div class="category-header"><i class="fas fa-rocket" style="margin-right:10px"></i> BUSINESS TRANSFORMATION & PROFESSIONAL SERVICES</div>
+                <div class="triple-cards">
+                    <div class="card bg-gradient-blue">
+                        <h4>CLOUD DESIGN</h4>
+                        <ul>
+                            <li>Cloud Cost Optimization</li>
+                            <li>Cloud to Cloud Migration</li>
+                            <li>IT Solution Design</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-teal">
+                        <h4>IT GOVERNANCE</h4>
+                        <ul>
+                            <li>License Management</li>
+                            <li>Role-Based Access (RBAC)</li>
+                            <li>Network Security Design</li>
+                        </ul>
+                    </div>
+                    <div class="card bg-gradient-dark">
+                        <h4>LIFECYCLE</h4>
+                        <ul>
+                            <li>Asset Disposition</li>
+                            <li>Hardware Buy-Back</li>
+                            <li>Migration (P2V, V2V)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-headset"></i>
+                    <h5>Get Support</h5>
+                    <p>Sales & Support Team</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <h5>Call Us</h5>
+                    <p><a href="tel:+916366447771">+91 63664 47771</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h5>Email Us</h5>
+                    <p><a href="mailto:contact@itsolutionexpert.co.in">contact@itsolutionexpert.co.in</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <h5>Visit Website</h5>
+                    <p><a href="https://www.itsolutionexpert.co.in" target="_blank">www.itsolutionexpert.co.in</a></p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8em;">
+                <p>&copy; 2026 IT Solution Expert (ITSE). All Rights Reserved. | <span style="color:var(--accent-teal)">Design, Manage & Protecting Your IT.</span></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
